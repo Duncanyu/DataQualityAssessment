@@ -18,6 +18,6 @@ first_column = df.pop('No_of_EmptyCell')
 second_column = df.pop('List_of_Empty_Col_Name')
 
 df.insert(0, 'No_of_EmptyCell', first_column)
-df.insert(0, 'List_of_Empty_Col_Name', second_column)
+df.insert(1, 'List_of_Empty_Col_Name', second_column)
 
 df.to_csv('processed.csv', index = False)
